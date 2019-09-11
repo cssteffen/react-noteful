@@ -1,0 +1,45 @@
+li {
+  list-style: none;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(35, 103, 105);
+}
+
+/* ==== ASIDE CONTENT =====*/
+
+aside {
+  border-right: 1px solid gray;
+  justify-content: flex-start;
+  text-align: center;
+  width: 25%;
+}
+.folderList {
+  margin-top: 20px;
+}
+
+.folderList > li {
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  /*border: 1px solid gray;*/
+}
+
+.folderList > li:hover {
+  background-color: darkgrey;
+}
+
+.addFolder {
+  padding: 12px;
+  margin: 7px;
+  width: 22vw;
+}

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: rgb(56, 143, 64);
+}
+
+fieldset {
+  background-color: white;
+  margin-top: 20px;
+  width: 50vw;
+  height: 150px;
+  border: 1px solid rgb(56, 143, 64);
+}
+
+span {
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-flex;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.selectFolder {
+  font-size: 1em;
+  width: 60%;
+  height: 1.8em;
+}
+
+.delete {
+  align-self: flex-end;
+  padding: 10px;
+  height: 35px;
+}
+
+.btn {
+  padding: 12px;
+  margin: 7px;
+  width: 22vw;
+}

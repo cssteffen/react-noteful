@@ -1,0 +1,39 @@
+h2 {
+  color: black;
+}
+h2:hover {
+  color: rgb(56, 143, 64);
+}
+button:hover {
+  background-color: goldenrod;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.noteInfo p {
+  margin: 0;
+}
+
+.noteInfo h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.deletebtn {
+  align-self: flex-end;
+  padding: 10px;
+  height: 35px;
+  text-transform: uppercase;
+}
+
+.deletebtn:hover {
+  background-color: rgb(252, 0, 0);
+  color: white;
+}

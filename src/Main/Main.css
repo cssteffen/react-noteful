@@ -1,0 +1,55 @@
+li {
+  list-style: none;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(35, 103, 105);
+}
+
+/* ==== MAIN CONTENT =====*/
+main {
+  width: 75%;
+}
+
+.mainContainer > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid gray;
+  margin-top: 10px;
+}
+
+.mainContainer {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.noteInfo p {
+  margin: 0;
+}
+
+.noteInfo h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.delete {
+  align-self: flex-end;
+  padding: 10px;
+  height: 35px;
+}
+.addNote {
+  padding: 12px;
+  margin-top: 10px;
+  width: 22vw;
+}

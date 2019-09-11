@@ -1,0 +1,20 @@
+/* ==== HEADER CONTENT =====*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  background-color: rgb(107, 189, 114);
+}
+
+h1 {
+  text-decoration-line: none;
+  color: black;
+}
+
+h1:hover {
+  color: azure;
+  /*color: rgb(35, 103, 105);*/
+}
