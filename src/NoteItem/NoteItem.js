@@ -1,22 +1,31 @@
 import React from "react";
+//import { Link } from "react-router-dom";
 import "./NoteItem.css";
-import NOTES from "../dummy-store";
+//import NOTES from "../dummy-store";
+import Note from "../Note/Note";
+//import NoteView from "../NoteView/NoteView";
 
 class NoteItem extends React.Component {
   render() {
+    console.log("<NoteItem />" + this.props.notes);
+    const noteList = this.props.notes.map(item => (
+      <Note key={item.id} note={item} folders={this.props.folders} />
+    ));
     return (
       <ul>
-        {NOTES.map(note => (
+        {noteList}
+        {console.log(this.props.notes)}
+        {/*NOTES.notes.map(note => (
           <li key={note.id}>
             <div className="noteInfo">
-              <a href="#">
+              <Link to={`/note/${note.name}`}>
                 <h2>{note.name}</h2>
-              </a>
+              </Link>
               <p>{note.modified}</p>
             </div>
             <button className="deletebtn">Delete Note</button>
           </li>
-        ))}
+        ))*/}
       </ul>
     );
   }
@@ -25,6 +34,12 @@ class NoteItem extends React.Component {
 export default NoteItem;
 
 /* ============
+import { format } from "date-fns";
+
+              <p>{format(note.modified, "Do MMM YYYY")}</p>
+
+
+
    const noteList = NOTES.map(note => <li key={note.id}>
       <h2>{note.name}</h2></li>);
     <ul>

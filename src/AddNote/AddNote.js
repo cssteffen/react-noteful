@@ -10,7 +10,7 @@ export default class AddNote extends React.Component {
         <form className="noteForm">
           <fieldset>
             <legend>Create a Note</legend>
-            <label for="note_input_title">
+            <label htmlFor="note_input_title">
               Title
               <input
                 id="note_input_title"
@@ -19,9 +19,9 @@ export default class AddNote extends React.Component {
                 placeholder="Note Title"
               />
             </label>
-            <label for="note_input_content">Content</label>
+            <label htmlFor="note_input_content">Content</label>
             <textarea id="note_input_content"></textarea>
-            <label for="selectFolder">Select a Folder</label>
+            <label htmlFor="selectFolder">Select a Folder</label>
             <select id="note_selected_folder">
               <option value="">...</option>
               <option value="Folder1">Folder 1</option>

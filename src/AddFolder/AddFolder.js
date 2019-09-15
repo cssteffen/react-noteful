@@ -9,7 +9,7 @@ export default class AddFolder extends React.Component {
         <form className="folderForm">
           <fieldset>
             <legend>Create a folder</legend>
-            <label for="selectFolder">
+            <label htmlFor="selectFolder">
               <span>Folder Name</span>
             </label>
             <input

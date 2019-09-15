@@ -9,10 +9,7 @@ class Main extends React.Component {
     return (
       <main>
         <div className="mainContainer">
-          <NoteItem />
-          <NoteItem />
-          <NoteItem />
-          <NoteItem />
+          <NoteItem notes={this.props.notes} folders={this.props.folders} />
           <Link to="/newNote">
             <button className="addNote btn">Add note</button>
           </Link>
@@ -23,3 +20,5 @@ class Main extends React.Component {
 }
 
 export default Main;
+/*          <NoteItem notes={this.props.notes} />
+ */
